@@ -5,7 +5,7 @@ import {InputFormContainer} from "./InputFormComponents";
 
 
 
-function InputForm({ index }: QuestionProps){
+function InputForm({ index, question }: QuestionProps){
     const [positionState, setPositionState] = useState<PositionState>(1)
 
     const pushPositionState = () => {
@@ -19,7 +19,7 @@ function InputForm({ index }: QuestionProps){
     return <>
         {
             <InputFormContainer positionState={positionState}>
-
+                {question}
             </InputFormContainer>
         }
     </>
