@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build-start": "next build && next start";
+    "build-start": "next build && next start"
   },
   "dependencies": {
     "@emotion/react": "^11.4.1",
