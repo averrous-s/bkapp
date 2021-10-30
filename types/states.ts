@@ -1,0 +1,1 @@
+export type PositionState = 0 | 1 | 2

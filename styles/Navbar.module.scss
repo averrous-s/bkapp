@@ -1,0 +1,35 @@
+$background: aquamarine;
+
+.container {
+  background-color:$background;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.links > * {
+  display: inline;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.menuIconPhone {
+  visibility: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 600px){
+  .links {
+    visibility: hidden;
+  }
+  .menuIconPhone {
+    visibility: visible;
+    transition: 0.2s ease-in-out;
+  }
+
+  .container {
+    visibility: hidden;
+  }
+}
